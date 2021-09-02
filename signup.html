@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="signup.css">
+    <title>Signup</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header style="position: fixed; width: 100%; z-index: 1;">
+        <div class="row no-gutters text-dark bg-light">
+            <div class="col-md-6 col-9 p-3 pl-4" style="display: flex;">
+                <h2>Code<h2 class="text-warning">M</h2></h2>
+            </div>
+
+
+            <div class="col-md-6 col-3 my-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
+
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav  ml-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#serv">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exp">About Me</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#form">Contact me</a>
+                          </li>
+                      </ul>
+                    </div>
+
+
+                  </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="signup" style="padding-top: 10em; ">
+        <div class="container">
+            <h2>Signup</h2>
+            <div class="row">
+                <div class="col-md-12 pt-4">
+                    <form id="form">
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Name</label>
+                        <input type="name" required class="form-control" id="fname" placeholder="Your Name">
+                      </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" required class="form-control" id="eemail" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div> 
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" required id="lpassword" placeholder="Password">
+                        </div>
+                        <button onclick="UserRegister()" style="width: 100%; margin-top: 20px;" type="submit" class="btn btn-primary">SignUp</button>
+                        <a style="cursor: pointer;" onclick="nav1()" id="nav-1">SignIn -></a>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="signin" style="padding-top: 10em;">
+      <div class="container">
+          <h2>SignIn</h2>
+          <div class="row">
+              <div class="col-md-12 pt-4">
+                  <form id="form">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input required type="email" class="form-control" id="eemail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input required type="password" class="form-control" id="lpassword" placeholder="Password">
+                      </div>
+                      <button onclick="SignIn()" style="width: 100%; margin-top: 20px;" type="submit" class="btn btn-primary">SignIn</button>
+                      <a id="n" onclick="n()">Sign Up -></a>
+                    </form>
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

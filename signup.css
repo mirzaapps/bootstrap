@@ -1,0 +1,12 @@
+#nav1{
+    margin-top: 10px;
+    width: 150px;
+    height: 28px;
+    font-size: 14px;
+    border-radius: 50px;
+    background-color: lightcoral;
+    border-color: transparent;
+}
+#n{
+    cursor: pointer;
+}
