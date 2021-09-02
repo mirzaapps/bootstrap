@@ -1,0 +1,61 @@
+#mephoto{
+    height: 490px;
+    border-radius: 50px;
+}
+#home{
+    padding-top: 10em;
+}
+#skills{
+    margin-top: 3em;
+}
+.line-1{
+    width: 300px;
+    height: 10px;
+    background: lightblue;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+.line-2{
+    width: 90%;
+    height: 100%;
+    background: #00203fff;
+    border-radius: 30px;
+}
+.line-css-2{
+    width: 60%;
+    height: 100%;
+    background: #00203fff;
+    border-radius: 30px;
+}
+.bg{
+    align-items: center;
+    margin-bottom: 50px;
+    background: lightcoral;
+    border-radius: 50% 50% 49% 51% / 9% 11% 89% 91% ;
+}
+.gotosignup{
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border-color: transparent;
+    display: none;
+}
+#signoutn:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#name{
+    background: transparent;
+}
+#hi{
+    display: none;
+}
+@media  (max-width:768px) {
+    #home{
+        padding-top: 6em;
+    }
+}
